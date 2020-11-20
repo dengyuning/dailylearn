@@ -1,4 +1,4 @@
-wavdir="/Users/vera/Documents/Jin/OneDrive - McGill University/McGill/Projects/Eval 1/phrasing_focus/64mp3-v1"
+wavdir="123 45"
 echo $wavdir
 cd "$wavdir"
 
