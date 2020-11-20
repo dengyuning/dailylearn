@@ -1,4 +1,3 @@
-
 alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
 alias ll='ls -alF'
 alias qa='cd /Users/yndeng/go/src/git.code.oa.com/CloudNLP/iask-DocQA'
