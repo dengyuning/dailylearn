@@ -1,3 +1,5 @@
+1. 找无序数组中的第k大元素
+
 func findKthLargest(nums []int, k int) int {
 	rand.Seed(time.Now().UnixNano())
 	return quickSelect(nums, 0, len(nums)-1, len(nums)-k)
@@ -31,3 +33,26 @@ func partition(a []int, l, r int) int {
 	a[i+1], a[r] = a[r], a[i+1]
 	return i + 1
 }
+
+
+2. 找二叉树中的第k大元素
+```
+func kthLargest(root *TreeNode, k int) int {
+    res := inorderTraversal(root)
+    return res[len(res)-k]
+}
+
+func inorderTraversal(root *TreeNode) (res []int) {
+	var inorder func(node *TreeNode)
+	inorder = func(node *TreeNode) {
+		if node == nil {
+			return
+		}
+		inorder(node.Left)
+		res = append(res, node.Val)
+		inorder(node.Right)
+	}
+	inorder(root)
+	return
+}
+```
