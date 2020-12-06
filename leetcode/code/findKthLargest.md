@@ -1,4 +1,5 @@
 1. 找无序数组中的第k大元素
+```
 
 func findKthLargest(nums []int, k int) int {
 	rand.Seed(time.Now().UnixNano())
@@ -34,6 +35,7 @@ func partition(a []int, l, r int) int {
 	return i + 1
 }
 
+```
 
 2. 找二叉树中的第k大元素
 ```
