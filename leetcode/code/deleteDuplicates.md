@@ -8,6 +8,8 @@
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii
 
+```
+
 func deleteDuplicates(head *ListNode) *ListNode {
 	dummyHead := &ListNode{
 		Val: -1,
@@ -30,3 +32,5 @@ func deleteDuplicates(head *ListNode) *ListNode {
 	}
 	return dummyHead.Next
 }
+
+```
