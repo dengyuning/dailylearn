@@ -70,3 +70,9 @@
     ```
     gofmt -w src
     ```
+14. 撤销上一次commit
+    
+   ```
+   git reset --soft HEAD^
+   ```
+
