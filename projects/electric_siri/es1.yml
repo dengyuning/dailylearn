@@ -1,0 +1,4 @@
+cluster.name: "docker-cluster"
+network.host: localhost
+discovery.zen.minimum_master_nodes: 1
+xpack.license.self_generated.type: basic
