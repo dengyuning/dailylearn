@@ -60,4 +60,21 @@ func SaveConfig() error {
 	return nil
 }
 
+func GoRouting(){
+	for i := 0; i < 3; i++ {
+		wg := sync.WaitGroup{}
+		ch := make(chan int, 5)
+		for j:=0;j<5;j++{
+			wg.Add(1)
+			go func(wg *sync.WaitGroup, i int,  ch chan<- int) {
+				log.Printf("i:%d", i)
+				ch <- i
+				wg.Done()
+			}(&wg, j,ch)
+		}
+		wg.Wait()
+		log.Printf("run:i:%d", i)
+	}
+}
+
 ```
